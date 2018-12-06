@@ -33,7 +33,6 @@
 		7476D54421B6503F00CA7316 /* AnimatedController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7476D54221B6503F00CA7316 /* AnimatedController.xib */; };
 		7476D57A21B66BB300CA7316 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7476D57821B66BB300CA7316 /* LocationController.m */; };
 		7476D57B21B66BB300CA7316 /* LocationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7476D57921B66BB300CA7316 /* LocationController.xib */; };
-		7476D57E21B66FF300CA7316 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7476D57D21B66FF300CA7316 /* LocationManager.m */; };
 		74B9A5D721AE6BEB006C1333 /* BridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9A5D521AE6BEB006C1333 /* BridgeController.m */; };
 		74B9A5D821AE6BEB006C1333 /* BridgeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74B9A5D621AE6BEB006C1333 /* BridgeController.xib */; };
 		74C4B63521AE85600019377D /* Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C4B63421AE85600019377D /* Bridge.m */; };
@@ -367,8 +366,6 @@
 		7476D57721B66BB300CA7316 /* LocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
 		7476D57821B66BB300CA7316 /* LocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
 		7476D57921B66BB300CA7316 /* LocationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationController.xib; sourceTree = "<group>"; };
-		7476D57C21B66FF300CA7316 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
-		7476D57D21B66FF300CA7316 /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		74B9A5D421AE6BEB006C1333 /* BridgeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeController.h; sourceTree = "<group>"; };
 		74B9A5D521AE6BEB006C1333 /* BridgeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeController.m; sourceTree = "<group>"; };
 		74B9A5D621AE6BEB006C1333 /* BridgeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BridgeController.xib; sourceTree = "<group>"; };
@@ -630,8 +627,6 @@
 				7476D57721B66BB300CA7316 /* LocationController.h */,
 				7476D57821B66BB300CA7316 /* LocationController.m */,
 				7476D57921B66BB300CA7316 /* LocationController.xib */,
-				7476D57C21B66FF300CA7316 /* LocationManager.h */,
-				7476D57D21B66FF300CA7316 /* LocationManager.m */,
 			);
 			name = LocationDemo;
 			path = calendar/LocationDemo;
@@ -1303,7 +1298,6 @@
 				74C4B63D21AE87A30019377D /* MapController.m in Sources */,
 				7436B63B21AD40DC0083BCF0 /* ListViewController.m in Sources */,
 				74F7CF4821AD539300A763F8 /* CalendarManager.m in Sources */,
-				7476D57E21B66FF300CA7316 /* LocationManager.m in Sources */,
 				74F7CF3E21AD464F00A763F8 /* RNIOSExportJsToReact.m in Sources */,
 				74C79AFB21B77964008B8780 /* TestManagerController.m in Sources */,
 				74F7CF4421AD515E00A763F8 /* CalendarController.m in Sources */,

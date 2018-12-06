@@ -1,8 +1,8 @@
 import {Component} from "react";
-import {StyleSheet, Text, View, NativeModules} from "react-native";
+import {StyleSheet, Text, View} from "react-native";
 import React from "react";
 
-const LocationManager = NativeModules.LocationManager;
+var Geolocation = require('Geolocation');
 
 export default class LocationDemo extends Component<Props> {
 
@@ -10,7 +10,22 @@ export default class LocationDemo extends Component<Props> {
         return (
             <View style={styles.container}>
                 <Text style={styles.button} onPress={()=>{
-                    LocationManager.getLocation();
+                    Geolocation.getCurrentPosition(
+                        location => {
+                            var result = "速度：" + location.coords.speed +
+                                "\n经度：" + location.coords.longitude +
+                                "\n纬度：" + location.coords.latitude +
+                                "\n准确度：" + location.coords.accuracy +
+                                "\n行进方向：" + location.coords.heading +
+                                "\n海拔：" + location.coords.altitude +
+                                "\n海拔准确度：" + location.coords.altitudeAccuracy +
+                                "\n时间戳：" + location.timestamp;
+                            alert(result);
+                        },
+                        error => {
+                            alert("获取位置失败："+ error)
+                        }
+                    );
                 }}>Get Location!</Text>
             </View>
         )
